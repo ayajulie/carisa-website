@@ -1,5 +1,7 @@
-$color:red; 
-$color2:blue;
-body{
-  background-color: $color2;
+@import "scss/config";
+@import "scss/utilities";
+
+body {
+  background-color: $bg-dark;
+  font-family: $header-font-family;
 }
