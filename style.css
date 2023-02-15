@@ -1,0 +1,38 @@
+h1 {
+  color: darkolivegreen;
+}
+.container {
+  width: 20%;
+  /* transform: rotate(90deg); */
+  background: yellow;
+  margin-top: 150px;
+  margin-left: 100px;
+  position: relative;
+  /* o be able to change the position */
+
+  animation: moveInLeft;
+  animation-duration: 3s;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease;
+}
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(700px);
+    /* X to animate in the right direction| 
+  negative value means it goes to the left and postive means it goes to the right */
+  }
+  50% {
+    opacity: 0.25;
+    transform: translateX(350px);
+  }
+  75% {
+    opacity: 0.5;
+    transform: translateX(175px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    /* value means means back to where it was */
+  }
+}
